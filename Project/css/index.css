@@ -1,0 +1,420 @@
+/*首页样式*/
+#top{
+    /*设置宽度和浏览器一样*/
+    width: 100%;
+    height: 42px;
+    /*下边框*/
+    border-bottom: 1px #efeeec solid;
+    background-color: #faf9f8;
+}
+#top .top_content{
+    width: 1200px;
+    height: 42px;
+    margin: 0px auto;
+}
+#top .top_content .deliver{
+    width: 120px;
+    height: 42px;
+    /*行高(垂直居中)*/
+    line-height: 42px;
+    /*向左浮动*/
+    float: left;
+}
+#top .top_content .login{
+    width: 200px;
+    height: 42px;
+    /*行高(垂直居中)*/
+    line-height: 42px;
+    float: left;
+}
+#top .top_content .usercenter{
+    width: 200px;
+    height: 42px;
+    /*行高(垂直居中)*/
+    line-height: 42px;
+    /*向右浮动*/
+    float: right;
+    /*文字右对齐*/
+    text-align: right;
+}
+#search{
+    width: 100%;
+    height: 96px;
+}
+#search .search_content{
+    width: 1200px;
+    height: 96px;
+    /*居中*/
+    margin: 0 auto;
+}
+#search .search_content .logo{
+    width: 210px;
+    height: 96px;
+    float: left;
+}
+#search .search_content .logo a img{
+    /*图片居中*/
+    margin-top: 27px;
+}
+#search .search_content .searchform{
+    width: 750px;
+    height: 96px;
+    /*行高,居中*/
+    line-height: 96px;
+    float: left;
+}
+#search .search_content .shoppingcart{
+    width: 144px;
+    height: 96px;
+    float: right;
+}
+/*搜索文本框*/
+#searchtext{
+    width: 592px;
+    height: 38px;
+    /*删除边框*/
+    border: 0;
+    /*设置内边框,左右为10*/
+    padding: 0 10px;
+    /*取消鼠标点击后的外边框*/
+    outline: none;
+    /*设置背景*/
+    background: url("../images/searchtext_bg.png") no-repeat 0 center;
+}
+/*搜索框按钮*/
+#searchbtn{
+    width: 122px;
+    height: 38px;
+    /*删除内边框*/
+    padding: 0;
+    /*取消鼠标点击后的外边框*/
+    outline: none;
+    background-color: red;
+    color: #ffffff;
+}
+#search .search_content .shoppingcart a{
+    width: 140px;
+    border: 1px red solid;
+    height: 34px;
+    /*文字居中*/
+    line-height: 34px;
+    /*转换为块级元素*/
+    display: block;
+    /*居中*/
+    text-align: center;
+    /*设置上外边框*/
+    margin-top: 30px;
+}
+/*导航样式*/
+#nav{
+    width: 100%;
+    height: 42px;
+    background-color: #000000;
+}
+#nav .nav_content{
+    width: 1200px;
+    height: 42px;
+    /*居中对齐*/
+    margin: 0 auto;
+    /*开启相对布局*/
+    position: relative;
+}
+#nav .nav_content .allclass{
+    width: 210px;
+    height: 42px;
+    /*行高*/
+    line-height: 42px;
+    /*居中*/
+    text-align: center;
+    background-color: red;
+    color: #ffffff;
+    /*字体大小*/
+    font-size: 15px;
+    float: left;
+}
+#nav .nav_content .allclass_content{
+    width: 200px;
+    height: 500px;
+    background-color: #ffffff;
+    /*开启绝对定位*/
+    position: absolute;
+    top: 42px;
+    left: 0;
+    /*IE浏览器半透明*/
+    filter: alpha(Opacity=80);
+    /*火狐浏览器半透明*/
+    -moz-opacity: 0.8;
+    /*IE浏览器以外的浏览器半透明*/
+    opacity: 0.8;
+}
+#nav .nav_content .allclass_content ul{
+    width: 180px;
+    margin-left: 10px;
+}
+#nav .nav_content .allclass_content ul li{
+    padding-top: 30px;
+    width: 180px;
+    height: 40px;
+}
+#nav .nav_content .allclass_content ul li a{
+    /*块级元素*/
+    display: block;
+    width: 180px;
+    margin-top: 10px;
+}
+#nav .nav_content .allclass_content ul li a em{
+    float: right;
+}
+#nav .nav_content .notice{
+    width: 230px;
+    height: 500px;
+    background-color: #ffffff;
+    /*绝对定位*/
+    position: absolute;
+    top: 42px;
+    right: 0;
+    padding: 0 10px;
+}
+#nav .nav_content .notice h2{
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    font-size: 16px;
+    /*下划线*/
+    border-bottom: 1px #d0cdc7 dashed;
+}
+#nav .nav_content .notice ul{
+    margin-top: 10px;
+}
+#nav .nav_content .notice ul li{
+    padding-bottom: 15px;
+}
+#nav .nav_content .notice ul li a{
+    font-size: 15px;
+}
+#nav .nav_content .allclass_content ul li h4{
+    /*转换为行内元素*/
+    display: inline;
+}
+#nav .nav_content .nav_items{
+    float: left;
+    width: 960px;
+    height: 42px;
+    /*行高*/
+    line-height: 42px;
+    padding-left: 30px;
+}
+#nav .nav_content .nav_items li{
+    float: left;
+    font-weight: bolder;
+    font-size: 15px;
+    padding-right: 39px;
+}
+#nav .nav_content .nav_items li a{
+    color: #ffffff;
+}
+#carousel{
+    width: 100%;
+    height: 500px;
+    background: url("../images/carouselimg.png") no-repeat center center;
+}
+/*商品展示*/
+#productshow{
+    width: 100%;
+    padding-top: 40px;
+    margin-bottom: 90px;
+}
+#productshow .common_bar{
+    width: 1200px;
+    height: 45px;
+    margin: 0 auto;
+    background-color: #f0f0f7;
+    /*上边框*/
+    border-top: 2px #e23775 solid;
+    margin-bottom: 22px;
+}
+#productshow .common_bar .title{
+    width: 190px;
+    height: 45px;
+    color: #ffffff;
+    /*加粗*/
+    font-weight: bolder;
+    /*居中*/
+    line-height: 45px;
+    /*水平居中*/
+    text-align: center;
+    background: url(../images/djh_bg.png) repeat-y;
+    font-size: 16px;
+    float: left;
+}
+#productshow .common_bar .right-link{
+    float: right;
+    height: 45px;
+    line-height: 45px;
+    width: 90px;
+    /*文字右对齐*/
+    text-align: right;
+    padding-right: 20px;
+}
+#productshow .djh_content{
+    width: 1200px;
+    height: 179px;
+    margin: 0 auto;
+}
+#productshow .djh_content .djh_content_div{
+    float: left;
+    width: 396px;
+    height: 179px;
+}
+#productshow .djh_content .right_margin_6{
+    margin-right: 6px;
+}
+#productshow .djh_content .djh_content_div .djh_pn .p{
+    display: block;
+    width: 86px;
+    height: 19px;
+    background-color: red;
+    color: #ffffff;
+    font-weight: bolder;
+    float: left;
+    text-align: center;
+    line-height: 19px;
+    margin-top: 4px;
+}
+#productshow .djh_content .djh_content_div .djh_pn .yg{
+    display: block;
+    float: right;
+    color: #ff519d;
+    margin-top: 4px;
+    width: 200px;
+    height: 19px;
+    line-height: 19px;
+    text-align: right;
+    padding-right: 20px;
+}#productshow .djh_content .djh_content_div .djh_pn a{
+    display: block;
+    float: right;
+    margin-top: 4px;
+    height: 19px;
+    line-height: 19px;
+    text-align: right;
+    font-weight: bolder;
+    color: #000000;
+ }
+ #productshow .c_clumn{
+     padding-top: 45px;
+ }
+ #productshow .c_clumn .myzj_bar{
+     border-top-color: #185bad;
+ }
+#productshow .c_clumn .myzj_bar .title{
+    background-image: url("../images/myzj_title_bg.png");
+    /*y轴方向循环图片*/
+    background-repeat: repeat-y;
+}
+#productshow .c_clumn .myzj_bar ul{
+    width: 800px;
+    height: 45px;
+    float: right;
+}
+#productshow .c_clumn .myzj_bar ul li{
+    float: right;
+    height: 45px;
+    line-height: 45px;
+    width: 96px;
+}
+#productshow .c_clumn .myzj_bar ul li a{
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    width: 96px;
+    text-align: center;
+}
+#productshow .c_clumn .myzj_bar ul li.active a{
+    background-color: red;
+    color: #ffffff;
+}
+#productshow .c_clumn .c_list{
+    width: 1200px;
+    height: 302px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#productshow .c_clumn .c_list > a{
+    display: block;
+    width: 230px;
+    height: 300px;
+    border: 1px #e0dedb solid;
+    float: left;
+}
+#productshow .c_clumn .c_list > a > .c_list_img > img{
+    width: 230px;
+    height: 230px;
+}
+#productshow .c_clumn .c_list > a > p{
+    line-height: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #444444;
+}
+#productshow .c_clumn .c_list > a > div.price{
+    font-size: 16px;
+    color: red;
+    padding-left: 5px;
+}
+#productshow .c_clumn .c_list > a.rm10{
+    margin-right: 10px;
+}
+#foot{
+    width: 100%;
+    height: 370px;
+    background-color: #f0f7f4;
+}
+#foot .foot_content{
+    width: 100%;
+    height: 228px;
+    border-top: 2px #ff3333 solid;
+    border-bottom: 1px #e0dedb solid;
+}
+#foot .foot_content .foot_con1200{
+    width: 1200px;
+    height: 228px;
+    margin: 0 auto;
+}
+#foot .foot_content .foot_con1200 ul{
+    width: 215px;
+    height: 202px;
+    border-right: 1px #e0dedb solid;
+    float: left;
+    padding-top: 26px;
+}
+#foot .foot_content .foot_con1200 ul.lastul{
+    width: 336px;
+    border-right: 0;
+}
+#foot .foot_content .foot_con1200 ul li h2{
+    font-size: 16px;
+    font-weight: bold;
+}
+#foot .foot_content .foot_con1200 ul li{
+    padding-left: 40px;
+    padding-top: 13px;
+}
+#foot .foot_content .foot_con1200 ul li a{
+    color: #9a9791;
+}
+#foot p{
+    text-align: center;
+    line-height: 35px;
+}
+#foot p.yqlj{
+    margin-top: 15px;
+}
+#foot p.yqlj em{
+    font-weight: bolder;
+}
+#foot p.yqlj a{
+    padding: 0px 3px;
+}
+
