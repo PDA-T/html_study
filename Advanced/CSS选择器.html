@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS选择器</title>
+    <!--内部CSS-->
+    <style type="text/css">
+        /*元素选择器,选择页面中全部p标签*/
+        p{
+            /*字体颜色*/
+            color: red;
+            /*字体大小*/
+            font-size: 44px;
+        }
+        div{
+            color: blue;
+            font-size: 30px;
+        }
+        /*id选择器,只能选一个id,id不能重复*/
+        #p2{
+            color: aqua;
+        }
+        /*class选择器,可以一次选择多个class名一样的标签*/
+        .pp{
+            color: blue;
+        }
+        /*复合选择器,可以同时使用多个选择器,必须满足所有选择器条件才会选择*/
+        div.cv{
+            color: blueviolet;
+        }
+        /*通用选择器,使用通配符,选择全部标签*/
+        *{
+            color: black;
+        }
+        /*后代元素和子元素选择器,根据元素等级选择,最高为html标签,其次是html的子标签,之后是子标签的子标签.....
+          后代元素选择器:只选择后代元素(下级元素),一层一层的选择(从父元素开始选择到某一个子元素)*/
+        #div1 p b{
+            color: brown;
+        }
+        /*子元素选择器,如果使用空格b(后代元素选择器)将会选择div下面的所有b标签(包括孙子辈,曾孙辈)
+          如果使用>(子元素选择器)只会选择儿子辈*/
+        #div1 > b{
+            color: antiquewhite;
+        }
+        /*群组选择器,可以使用多个条件选择*/
+        #div1,#div2>b,#div3>p{
+            color: crimson;
+        }
+        /*兄弟元素选择器,查找id为p1后面第一个的div兄弟标签*/
+        #p1+div{
+            color: slateblue;
+        }
+        /*兄弟元素选择器,查找id为p1的所有p兄弟标签*/
+        #p1~p{
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <!--段落-->
+    <p>CSS选择器</p>
+    <p>CSS选择器2</p>
+    <p>CSS选择器3</p>
+    <p>CSS选择器4</p>
+    <p>CSS选择器5</p>
+    <p>CSS选择器6</p>
+    <!--区块标签-->
+    <div>div标签</div>
+    <div>div标签2</div>
+    <div>div标签3</div>
+    <!--使用id和class选择器的段落标签,class可以重复id不可以-->
+    <p class="pp" id="p">id选择器标签</p>
+    <p class="pp" id="p2">id选择器标签2</p>
+    <div class="pp" id="div">di选择器div标签</div>
+    <!--使用复合选择器,选中div标签1-->
+    <p class="cv">复合选择器</p>
+    <p class="cv">复合选择器2</p>
+    <div class="cv">复合选择器div标签</div>
+    <div class="cv1">复合选择器div标签2</div>
+    <!--使用后代元素选择器,div的子元素是p,p的子元素是b-->
+    <div id="div1">
+        <p>后代选择器<b>b标签</b></p>
+        <div id="div2">
+            <b>b标签</b>
+        </div>
+        <b>b标签2</b>
+    </div>
+    <!--使用兄弟选择器-->
+    <div id="div3">
+        <p id="p1">兄弟选择器</p>
+        <div id="div4">
+            div标签
+        </div>
+        <p>兄弟选择器2</p>
+        <p>兄弟选择器3</p>
+        <p>兄弟选择器4</p>
+        <p>兄弟选择器5</p>
+        <p>兄弟选择器6</p>
+    </div>
+</body>
+</html>

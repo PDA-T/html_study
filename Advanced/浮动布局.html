@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动布局</title>
+    <style type="text/css">
+        #father{
+            width: 500px;
+            /*背景颜色*/
+            background-color: #cccccc;
+        }
+        #top{
+            width: 500px;
+            height: 50px;
+            background-color: #0000ff;
+            float: left;
+        }
+        #left{
+            width: 100px;
+            height: 500px;
+            background-color: green;
+            /*向左浮动*/
+            float: left;
+        }
+        #center{
+            width: 250px;
+            height: 500px;
+            background-color: orange;
+            /*向左浮动*/
+            float: left;
+            /*左边外边距距离*/
+            margin-left: 25px;
+        }
+        #right{
+            width: 100px;
+            height: 500px;
+            background-color: orchid;
+            /*向右浮动*/
+            float: right;
+        }
+        #foot{
+            width: 500px;
+            height: 50px;
+            background-color: #000000;
+            color: #ffffff;
+            /*向左浮动*/
+            float: left;
+        }
+        /*兼容老版本IE浏览器*/
+        .clearfix{
+            *zoom: 1;
+        }
+        /*伪类,清除掉左右浮动的负面影响,保证父元素不塌陷*/
+        .clearfix::after{
+            /*清除兄弟元素浮动之后带来的影响*/
+            clear: both;
+            content: "";
+            display: block;
+            height: 0;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!--正常文档流-->
+    <div id="div1">
+        div1
+    </div>
+    <span id="span1">
+        span1
+    </span>
+    <span id="span2">
+        span2
+    </span>
+    <p>
+        p
+    </p>
+    <span id="span3">
+        span3
+    </span>
+    <i>
+        i
+    </i>
+    <hr>
+    <!--浮动布局-->
+    <div class="clearfix" id="father">
+        <div id="top">top</div>
+        <div id="left">left</div>
+        <div id="center">center</div>
+        <div id="right">right</div>
+        <div id="foot">foot</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style type="text/css">
+        *{
+          /*内边距和外边距*/
+          padding: 0;
+          margin: 0;
+        }
+        #div1{
+            /*宽高*/
+            width: 100px;
+            height: 50px;
+            /*背景*/
+            background-color: red;
+            /*边框*/
+            border: 10px #555 solid;
+            /*内容区域,一般在CSS3使用*/
+            content: "aaaaaaaaaa";
+            /*容器大小不够时显示内容的方法*/
+            overflow: auto;
+            /*内边框间距*/
+            padding: 5px;
+            /*单独设置上下左右*/
+            padding: 5px 10px 20px 30px;
+            /*外边距*/
+            margin-top: 10px;
+        }
+        #span1{
+          width: 200px;
+          height: 200px;
+          /*转换为块级元素,可以设置宽高*/
+          display: block;
+          /*行内块元素,不会独占一行也会生效宽高*/
+          display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        div1的内容div1的内容div1的内容div1的内容div1的内容div1的内容div1的内容div1的内容div1的内容
+    </div>
+    <!--行内元素无法设置宽高-->
+    <span id="span1">
+      行内元素
+    </span>
+</body>
+</html>

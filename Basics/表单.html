@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <!--表单,input等元素必须写在表单内,参数为提交按钮提交此表单的方法和提交的地址-->
+    <form action="aimurl.html" method="get">
+        <!--表单值,单行文本框,maxlength为最多输入几个字符,要提交数据必须有name属性-->
+        <input type="text" name="username" value="默认值" size="50" maxlength="3">
+        <br>
+        <!--密码文本框-->
+        <input type="password" name="psw" value="默认值" size="50" maxlength="3">
+        <br>
+        <!--单选框,name为组名,checked为默认选择-->
+        性别:<input type="radio" value="男" name="sex" checked>男
+        <input type="radio" value="女" name="sex">女
+        <br>
+        <!--复选框-->
+        喜欢的电脑:<input type="checkbox" name="PC" value="台式">台式
+        <input type="checkbox" name="PC" value="笔记本">笔记本
+        <input type="checkbox" name="PC" value="主机">主机
+        <br>
+        <br>
+        <!--普通按钮-->
+        <input onclick="alert('弹框')" type="button" value="按钮上显示的文字">
+        <!--另一个写法-->
+        <button onclick="alert('弹框')" type="button">按钮上显示的文字</button>
+        <br>
+        <br>
+        <!--提交按钮-->
+        <input type="submit" value="提交按钮">
+        <br>
+        <br>
+        <!--重置按钮-->
+        <input type="reset" value="重置按钮">
+        <!--文件上传控件-->
+        <input type="file">
+        <br>
+        <br>
+        <!--多行文本框,20行60列-->
+        <textarea cols="60" rows="20">默认内容</textarea>
+        <br>
+        <br>
+        <!--下拉列表,参数添加multiple为可以多选-->
+        <select>
+            <!--默认选中(多选无效效)-->
+            <option selected>选项1</option>
+            <option>选项2</option>
+            <option>选项3</option>
+            <option>选项4</option>
+        </select>
+        <br>
+        <br>
+        <!--隐藏域,看不见,可以传递数据-->
+        <input type="hidden" value="aaa" name="bbb">
+    </form>
+</body>
+</html>

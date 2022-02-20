@@ -1,0 +1,5 @@
+/*p为选择器*/
+p{
+    /*大括号内为规则,会作用到p标签,!important为优先级最高*/
+    color: red!important;
+}

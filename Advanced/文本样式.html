@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本样式</title>
+    <style type="text/css">
+        /*选择a标签*/
+        a{
+            /*取消下划线*/
+            text-decoration: none;
+            /*从行变为区块,可以设置高度等*/
+            display: block;
+            /*高度*/
+            height: 200px;
+            /*设置实线边框*/
+            border: 1px #ccc solid;
+            /*设置行高*/
+            line-height: 200px;
+        }
+        /*id选择器*/
+        #fv{
+            /*吧小写转换为小大写,基本不用*/
+            font-variant: small-caps;
+        }
+        #p1{
+            /*设置字体大小*/
+            font-size: 18px;
+            /*设置缩进两个汉字*/
+            text-indent: 36px;
+            /*设置字间距*/
+            letter-spacing: 10px;
+        }
+        #p2{
+            /*内容居中对齐*/
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p id="p2"><img width="500" src="http://www.desktopwallpaperhd.net/wallpapers/10/3/xiarihaitan-guowai-tupian-104003.jpg"></p>
+    <p id="fv">HELLO hello</p>
+    <a href="http://1lin.xyz">默认超链接样式</a>
+    <p id="p1">文本样式p标签</p>
+</body>
+</html>

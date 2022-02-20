@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位布局</title>
+    <style type="text/css">
+      .box1{
+        width: 150px;
+        height: 150px;
+        background-color: green;
+      }
+      .box2{
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+        /*开启相对定位,参考位置为原始位置*/
+        position: relative;
+        /*向左移动*/
+        left: 150px;
+        /*向下移动*/
+        top: 150px;
+        /*提升定位层级,大的在上面,父元素层级再高也不会覆盖子元素*/
+        z-index: 10;
+      }
+      .box2_1{
+        width: 100px;
+        height: 100px;
+        background-color: #ffa500;
+        /*开启绝对定位,参照物为一级一级往上查找,直到找到开启定位的元素为参照或根元素(浏览器的四条边)*/
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+      .box3{
+        width: 150px;
+        height: 150px;
+        background-color: orange;
+        /*开启固定定位,参照物为浏览器的四条边,不会根据滚动条的滑动而移动*/
+        position: fixed;
+        top: 308px;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="box1">box</div>
+    <div class="box2">
+      <div class="box2_1">box2_1</div>
+    </div>
+    <div class="box3">box3</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框样式</title>
+    <style type="text/css">
+        table{
+            /*边框宽度*/
+            border-width: 10px;
+            /*实线*/
+            border-style: solid;
+            /*颜色*/
+            border-color: red;
+            /*简写*/
+            border: 10px solid red;
+            /*设置局部上边框*/
+            border-top: 1px solid red;
+            /*左边框*/
+            border-left: 1px solid green;
+            /*下边框*/
+            border-bottom: 1px solid blue;
+            /*右边框*/
+            border-right: 1px solid yellow;
+            /*去掉下边框*/
+            border-bottom: 0;
+            /*去掉右边框*/
+            border-right: 0;
+            /*设置字体和边框的高度为0,防止出现线条不齐*/
+            border-spacing: 0;
+        }
+        /*设置th和td的边框*/
+        th,td{
+            /*设置右边框*/
+            border-right: 1px solid red;
+            /*设置下边框*/
+            border-bottom: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Header</td>
+            <td>Header</td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+    </table>
+</body>
+</html>

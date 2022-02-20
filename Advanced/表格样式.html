@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格样式</title>
+    <style type="text/css">
+        table,th,td{
+            /*设置边框粗细颜色和实线,如果不合并边框会有两个边框*/
+            border: 1px red solid;
+        }
+        table{
+            /*设置表格标题位置*/
+            caption-side: bottom;
+            /*设置内边框和外边框的横纵距离,不能和合并边框一起使用*/
+            border-spacing: 5px 20px;
+            /*边框合并*/
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>标题</caption>
+        <tr>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+    </table>
+</body>
+</html>
